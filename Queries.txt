@@ -1,0 +1,21 @@
+Q_1_Which drink has the highest calories from the dataset?
+
+Select Beverage,max(calories) from drinkMenu2;
+
+-------------------------------------------------------------------------------
+Q_2_What is the average calorie amount for each drink category?
+
+Select Beverage_category, round(AVG(Calories),2) As Average_Calories
+from drinkMenu2
+group by Beverage_category;
+
+-------------------------------------------------------------------------------
+Q_3_Which drinks have a below-average calorie amount?
+
+Select AVG(calories) from drinkMenu2;
+
+
+Select Beverage, Calories from drinkMenu2 where Calories<193 order by 2 ;
+
+
+---------------------------------------------------------------------------------
